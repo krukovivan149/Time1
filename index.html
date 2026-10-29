@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="loggo" href="images/fotoo.png" type="images/">
+    <link rel="shortcut icon" href="images/fotoo.png" type="image/x-icon">
+    <title>Time</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__conteiner">
+        <nav class="header__nav">
+            <img class="lo" src="images/fotoo.png" alt="">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a class="header__list-link active" href="#">Главная</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-link" href="#">Каталог</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-link" href="#">О нас</a>
+                </li>
+                <li class="header__list-item">
+                    <a class="header__list-link" href="#">Контакты</a>
+                </li>    
+            </ul>
+            <a class="header__button" href="#">Корзина</a>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__conteiner">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Time
+                        </h1>
+                        <p class="hero__desc">
+                            Time — ваш гид в мире часов.  
+                        </p>
+                        <p class="hero__desc">
+                            Широкий ассортимент и честные цены.
+                        </p>
+                        <p class="hero__desc">
+                            Покупайте онлайн — доставим точно в срок.
+                        </p>
+                    </div>
+                    <div class="hero__button">
+                        <a href="#catalogg"><img class="loo" src="images/stre.png" alt=""></a>
+                    </div>
+                </div>
+                <a id="catalogg" href="catalog__title"><img class="hero__i" src="images/i.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="catalog">
+            <h1 class="catalog__title">Каталог</h1>
+            <div class="catalog__conteiner">
+                <div class="card__1">
+                    <h3 class="card__name">Casio</h3>
+                    <img class="ccard" src="images/foto.jpg" alt="">
+                    <p class="card__prise">4999</p>
+                    <button class="card__button-1">в корзину</button>
+                </div>
+                <div class="card__1">
+                    <h3 class="card__name">Tissot</h3>
+                    <img class="ccard" src="images/fotoo.png" alt="">
+                    <p class="card__prise">9999</p>
+                    <button class="card__button-1">в корзину</button>
+                </div>
+                <div class="card__1">
+                    <h3 class="card__name">Rolex</h3>
+                    <img class="ccard" src="images/fotooo.jpg" alt="">
+                    <p class="card__prise">500000</p>
+                    <button class="card__button-1">в корзину</button>
+                </div>
+                <div class="card__1">
+                    <h3 class="card__name">Casio</h3>
+                    <img class="ccard" src="images/foto.jpg" alt="">
+                    <p class="card__prise">4999</p>
+                    <button class="card__button-1">в корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Impact;
+}
+.lo {
+    width: 60px;
+    height: 60px;
+}
+.loo {
+    display:flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    right: 200px;
+    left: 300px;
+    box-sizing: border-box;
+}
+.header {
+    padding: 30px 0;
+}
+.header__conteiner, .header__conteiner {
+    max-width: 1069px;
+    background-color: white;
+    margin-inline: auto;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list-item {
+    font-weight: 550;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+}
+.header__list-item a {
+    color:rgb(91, 91, 91);
+}
+.header__list {
+    display: flex;
+    gap: 90px;
+    transition: 0.9s;
+}
+.header__list-link.active {
+    color:black;
+    border-bottom: 2px solid blue;
+    padding-bottom:10px;
+}
+.header__list-link:hover {
+    color:black;
+}
+.header__button {
+    color:rgb(215, 213, 213);
+    font-weight: 10;
+    font-size: 20px;
+    letter-spacing: 1.9px;
+    padding: 15px 30px;
+    background: rgb(5, 5, 209);
+    border-radius: 10px;
+}
+.header__button:hover {
+    opacity: 80%;
+}
+.hero {
+    padding: 50px;
+    background-color: rgb(230, 228, 226);
+}
+.hero__conteiner, .catalog__conteiner {
+    position: relative;
+}
+.hero__i {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    top: 0;
+    right: 0;
+    margin-left: 0px;
+}
+.hero__title {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 77px;
+    font-size: 80px;
+    font-weight: 550;
+    letter-spacing: -2.5px;
+}
+.hero__desc {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 33px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+    color:rgb(16, 16, 88);
+    margin-top: 20px;
+}
+.hero__button {
+    width: 68px;
+    height: 68px;
+    left: 1000px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    /* border: 3px solid black; */
+    /* border-radius: 200px; */
+    margin-top: 15px;
+    margin-left: 100px;
+}
+.hero__text {
+    width: 250px;
+}
+.catalog__title {
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 77px;
+    font-size: 80px;
+    font-weight: 550;
+    letter-spacing: -2.5px;
+}
+.catalog__conteiner {
+    position: inherit;
+}
+.card__1 {
+    align-items: center;
+    line-height: 25px;
+    box-sizing: border-box;
+    margin: 15px 15px;
+    border-radius:20px;
+    background-color: rgb(230, 228, 226);
+    width: 260px;
+    height: 320px;
+    padding: 15px;
+    border: 50px;
+    border-radius: 15x;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.ccard {
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5px 150px;
+    border-radius:20px;
+    width: 220px;
+    /* object-fit: contain; */
+    height: 230px;
+    padding: 15px 15px;
+    border: 5px;
+    border-radius: 15x;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card__prise {
+    padding: 1px 1px;
+    margin: 0;
+    line-height: 0;
+    width: 180px;
+    height: 200px;
+    font-size: 25px;
+}
+.card__name {
+    font-size: 45px;
+    width: 200px;
+    height: 20px;
+    margin: 0;
+    padding: -5px -5px;
+    color: #222;
+    font-weight: 400;
+}
+.card__button-1 {
+    border: none;
+    font-family:Impact ;
+    font-weight: 200;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+.catalog__conteiner {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+</style>
+</html>
